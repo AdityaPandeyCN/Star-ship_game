@@ -51,7 +51,7 @@ fn setup(
             SpriteSheetBundle {
                 texture_atlas: texture_atlas_handle,
                 transform: Transform {
-                    scale: Vec3::new(1.0, 1.0, 0.0),         // Ship size
+                    scale: Vec3::new(2.0, 2.0, 0.0),         // Ship size
                     translation: Vec3::new(0.0, 0.0, 0.0),    // Starting position (center)
                     ..default()
                 },
@@ -61,7 +61,7 @@ fn setup(
             Starship { rotation_speed: 1.0 },
             Velocity { x: 0.0, y: 0.0 },
             Engine {
-                fuel: 100.0,
+                fuel: 1000000.0,
                 thrust: 100.0,
             },
         ));
